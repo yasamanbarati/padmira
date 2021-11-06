@@ -1,0 +1,114 @@
+:root {
+    --first-color: #96424c;
+    --scond-color: #462a31;
+    --third-color: #ca5978;
+    --fourth-color: #fff2f2;
+    --fifth-color: #fff700;
+}
+.login-form{
+    background-color: var(--fourth-color);
+    border-radius: 0 0 45% 162%;
+}
+.login-form .container{
+    display: block;
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    max-width: 500px;
+    min-height: 600px;
+    box-shadow: 0 40px 50px -20px rgb(0, 0 , 0);
+}
+.background-form{
+    position: absolute;
+    z-index: -99;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.background-form img{
+    width: 100%;
+    height: 100%;
+}
+.login-form .container::after{
+    content: " ";
+    display: inline-block;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+        background-image: radial-gradient(ellipse at left bottom, #462a31eb 0%,#462a31d9 59%,#462a31b0 100%);
+}
+.login-form form{
+    position: relative;
+    z-index: 1;
+    padding: 25px;
+    padding-bottom: 10px;
+}
+.form-title h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f8fcff;
+    font-weight: 800;
+    font-size: 28px;
+    padding: 35px 0px;
+}
+.form-label {
+    display: block;
+    padding-left: 1rem;
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+}
+.form-option input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+    width: 100%;
+    border-radius: 10px;
+    height: 40px;
+background-color: #fff2f263;
+    color: #fff2f2;
+    padding: 10px;
+    border: 1px #f9fafb4a solid;
+}
+button.btn.form-button {
+    font-weight: 700;
+    font-size: 18px;
+    color: #f8fcff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 30px;
+    border: 1px #5e5d74 solid;
+    border-radius: 8px;
+}
+.social i{
+    color: #f8fcff;
+    font-size: 30px;
+}
+.social-account {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    padding: 10px 40px;
+}
+.login-forgot {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px #f8fcff solid;
+}
+.login-forgot a{
+    color: #f8fcff;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+}
