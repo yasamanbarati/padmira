@@ -1,0 +1,239 @@
+@media only screen and (max-width:1440px){
+    
+    header{
+        width: calc(100% - 140px);
+        
+    }
+    .information{
+        width: calc(100% - 140px);
+        max-width: 100%;
+        margin-right: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+
+    }
+    .main-logo{
+        width: 100%
+    }
+    .product-body{
+        display: none;
+    }
+    .services-card .card .card-body{
+    color: #480e6b;
+    direction: rtl;
+    transition: 0.7s ease-in-out;
+}
+    .services-card .card .img-card img{
+        width: 100%;
+    }
+.services-card .card .card-body{
+    z-index: 10;
+    color: #480e6b;
+    background: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    box-shadow:20px 20px 50px grey;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.services .services-card .card .card-body .card-text{
+    color: #480e6b;
+    direction: rtl;
+    font-weight: 500;
+}
+.services-card .card:hover .card-body .card-text{
+    color: #480e6b;
+}
+.card{
+    box-shadow: 5px 5px #f3e9e7,
+                2px 10px #f3e9e7,
+                1px 2px #f3e9e7;
+}
+    .pagination{
+        padding-left: 380px;
+    }
+    .main-img img{
+        margin: 0px 150px 20px 0px;
+    }
+    .header-menu .menu-item{
+        min-width: 25%; 
+    }
+    .comments{
+        width: calc(100% - 140px;)
+    }
+}
+@media only screen and (max-width:1000px){
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .header-buttons .login,
+    .main-link .login,
+    .header-buttons .member,
+    .main-link .about{
+        width: 85px;
+        height: 35px;
+        display: flex;
+        font-weight: 500;
+        font-size: 14px;
+        justify-content: center;
+        align-items: center;
+    }
+        .header-buttons .login,
+    .main-link .login{
+        margin-left: 10px;
+    }
+    .header-menu .menu-item .menu-link{
+        font-weight: 600;
+        font-size: 12px;
+        padding: 3px;
+    }
+    .main-information{
+        margin-top: 25px;
+    }
+    .main-information section h2{
+        font-size: 30px;
+    }
+    .main-information section p{
+        font-size: 14px;
+        max-height: 100px;
+    }
+    .information{
+        margin: 0 auto;
+    }
+    .service-box .service-icon img{
+        width: 50px;
+        height: 50px;
+    }
+    .service-item .service-box{
+        margin: 15px 10px 0px;
+        padding: 8px;
+    }
+    .service-item .service-box::before{
+        width: 40px;
+        height: 40px;        
+    }
+    .service-box .service-box-title h4{
+        font-size: 14px;
+    }
+    .service-box-text{
+        font-weight: 300;
+        font-size: 12px;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .card-body .card-title{
+        font-weight: 600;
+        font-size: 16px;
+        color: #321102;
+    }
+    .services .services-card .card .card-body .card-text{
+        font-weight: 400;
+        font-size: 13px;
+        color: #321102;        
+    }
+    .comment-box .text-comment{
+        width: auto;
+    }
+    .special .sp-card:hover .sp-body .sp-card-body{
+        top: 50%;
+    }
+    .special .sp-card .sp-body .card-icon{
+        border: transparent;
+        color: #e76f3d;
+    }
+    .main-img img{
+        margin: 10px 30px 10px 0px;
+    }
+}
+@media only screen and (max-width:900px){
+    .main-information{
+        width: 45%;
+        margin: 0px;
+    }
+    .main-information section p{
+        width: 300px;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .main-img img{
+        width: 80%;
+        height: 60%;
+        margin-right: 80px;
+        
+    }
+    .main-information .main-link{
+        margin: 10px 0 20px 0px;
+    }
+    .services-card{
+        min-height: 240px;
+    }
+    .services .services-card .card .card-body .card-text{
+        display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    }
+    .comments .title h3{
+        padding-top: 10px;
+        font-size: 23px;
+        font-weight: 600;
+    } 
+    .comments .title p{
+        font-size: 12px;
+        font-weight: 400;
+    }
+    .carousel-item .comment-box{
+        min-width: 47%;
+        height: 180px;
+    }
+    .comment-box .img-comment img{
+        width: 55px;
+        height: 55px;
+    }
+    .comment-box .title-comment{
+        margin: 20px 0px 0px 5px;
+    }
+    .comment-box .title-comment h5, .comment-box .title-comment caption{
+        font-weight: 400;
+        font-size: 12px;
+    }
+    .comment-box .text-comment p{
+        height: 100px;
+        max-width: 300px;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .special .sp-card:hover .sp-body{
+        width: 88%;
+        height: 84%;
+    }
+    .special .sp-card:hover .sp-body .sp-card-body{
+        top: 40%;
+        font-weight: 500;
+        font-size: 10px;
+    }
+    .special .sp-card:hover .sp-body .sp-card-body h5{
+        font-weight: 500;
+        font-size: 14px;
+    }
+    .special .sp-card .sp-body .card-icon{
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width:768px){
+    
+}
