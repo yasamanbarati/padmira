@@ -3,15 +3,13 @@ html{
     direction: rtl;
     font-family: Shabnam;
 }
-/*
-Azure color
-#e76f3d
-#feab6b
-#f3e9e7
-#9bcfe0
-#00a7c7
-#311002
-*/
+:root{
+    --first-color: #96424c;
+    --scond-color: #462a31;
+    --third-color: #ca5978;
+    --fourth-color: #fff2f2;
+    --fifth-color: #fff700;
+}
 /*header*/
 header{
     direction: rtl;
@@ -32,10 +30,10 @@ nav{
     align-items: center;
 }
 .header-logo h2 span:first-child{
-    color: #e76f3d;
+    color: var(--fifth-color);
 }
 .header-logo h2 span:last-child{
-    color: #311002;
+    color: var(--scond-color);
 }
 .header-menu,
 .header-buttons{
@@ -48,10 +46,7 @@ nav{
     align-items: center;
     list-style-type: none;
     margin: 0px;
-/*
-    max-width: 700;
-    overflow-x: scroll;
-*/
+
 }
 .header-menu .menu-item{
     width: 20%;
@@ -59,30 +54,13 @@ nav{
 }
 .header-menu .menu-item .menu-link{
     text-decoration: none;
-    color: #311002;
+    color: var(--scond-color);
     font-weight: 600;
     font-size: 15px;
     margin-left: 10px;
     width: 100%;
     height: 40px;
 }
-/*
-.header-menu .menu-item .menu-link::after{
-    content: "";
-    width: 0%;
-    height: 2px;
-    position: absolute;
-    background-color: #311002;
-    top: 65px;
-    margin-right: -55px;
-    transition: .7s ease;
-}
-.header-menu .menu-item .menu-link:hover::after{
-    width: 4%;
-    justify-content: center;
-    align-items: center;
-}
-*/
 .header-buttons{
     align-items: center;
     justify-content: end;
@@ -91,7 +69,7 @@ nav{
 .main-link .login{
     width: 125px;
     border: 3.5px transparent solid;
-    background-image: linear-gradient(white,white), linear-gradient(to right,#feab6b,#9bcfe0);
+    background-image: linear-gradient(white,white), linear-gradient(to right,var(--fifth-color),var(--third-color));
     background-clip:padding-box, border-box;
     background-origin: border-box;
     border-radius: 15px;
@@ -99,17 +77,16 @@ nav{
     font-size: 16px;
     transition: .7s ease;
     margin-left: 25px;
-    color: #311002;
+    color: var(--scond-color);
 }
 .header-buttons  .member,
 .main-link .about{
-/*    background: linear-gradient(to right,#311002,#e76f3d);*/
-    background-color: #feab6b;
+    background-color: var(--fifth-color);
     border: none;
     border-radius: 15px;
     width: 125px;
     height: 40px;
-    color: #311002;
+    color: var(--scond-color);
     font-weight: 700;
     font-size: 16px;
     display: flex;
@@ -118,7 +95,7 @@ nav{
 }
 .header-buttons  .login:hover,
 .main-link .login:hover{
-   background: linear-gradient(#feab6b,#feab6b);;
+   background: linear-gradient(var(--fifth-color),var(--fifth-color));;
     opacity: 7;
     color: white;
 }
@@ -130,39 +107,48 @@ nav{
     direction: rtl;
     
 }
+.information{
+    position: relative;
+}
 .main-information{
-    margin-top: 40px;
+    position: absolute;
+    z-index: 1;
+    top: 50px;
+    right: 67px;
 }
 .main-information section h2{
     margin: 30px 0;
     font-weight: 600;
     font-size: 35px;
-    color: #311002;
+    color: var(--scond-color);
 }
 .main-information section h2 span{
-    color: #feab6b ;
+    color: var(--fifth-color) ;
 }
 .main-information section p{
     width: 400px;
     height: 100px;
     font-weight: 400;
     font-size: 16px;
-    color: #311002;
+    color: var(--scond-color);
 }
 .main-information .main-link{
     list-style-type: none;
     margin: 30px auto;
     direction: ltr;
 }
+.main-img{
+    width: 100%;
+    height: 500px;
+}
 .main-img img{
-/*    display: none;*/
-    width: 400px;
-    height: 400px;
-    margin: 0 350px 20px 0;
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 /*affiliate shop*/
 .main-logo{
-    background-image: linear-gradient(to right,#f3e9e7,white,rgba(155, 207, 224, 0.72));
+    background-image: linear-gradient(to right,var(--fourth-color),white,var(--third-color));
 }
 .main-logo section{
     width: 100%;
@@ -203,12 +189,12 @@ nav{
 }
 .service-title h2{
     font-weight: 800;
-    color: #311002;
+    color: var(--scond-color);
 }
 .service-title p{
     font-weight: 400;
     font-size: 14px;
-    color: #311002;
+    color: var(--scond-color);
 }
 .service-item .service-box{
     margin: 20px 25px 0;
@@ -225,7 +211,7 @@ nav{
 .service-item .service-box::before{
     content: "";
     position: absolute;
-    background-color:  #9bcfe0;
+    background-color: var(--fifth-color);
     border-radius: 0 0 0 50px;
     width: 50px;
     height: 50px;
@@ -235,7 +221,7 @@ nav{
     transition: 0.7s ease;
 }
 .service-item .service-box:hover::before{
-    background-color: #9bcfe0;
+    background-color: var(--fifth-color);
     width: 100%;
     height: 100%;
     top: 0px;
@@ -249,18 +235,18 @@ nav{
     font-size: 16px;
     direction: rtl;
     margin: 10px 0;
-    color: #311002;
+    color: var(--scond-color);
 }
 .service-box-text p{
     direction: rtl;
-    color: #311002;
+    color: var(--scond-color);
 }
 .service-box .service-icon img{
     display: inline-block;
     width: 60px;
     height: 60px;
     font-size: 40px;
-    background-color: #9bcfe0;
+    background-color: var(--third-color);
     color: white;
     border-radius: 35px;
 }
@@ -271,7 +257,7 @@ nav{
 .service-box-text{
     font-weight: 400;
     font-size: 14px;
-    color: #311002;
+    color: var(--scond-color);
 }
 /*services-card*/
 .services-items{
@@ -322,7 +308,7 @@ nav{
 }
 .services-card .card:hover .card-body{
     z-index: 10;
-    color: #311002;
+    color: var(--scond-color);
     background: white;
     padding: 15px 30px;
     border-radius: 5px;
@@ -340,12 +326,12 @@ nav{
     font-weight: 500;
 }
 .services-card .card:hover .card-body .card-text{
-    color: #311002;
+    color: var(--scond-color);
 }
 .card:hover{
-    box-shadow: 5px 5px #f3e9e7,
-                2px 10px #f3e9e7,
-                1px 2px #f3e9e7;
+    box-shadow: 5px 5px var(--fourth-color),
+                2px 10px var(--fourth-color),
+                1px 2px var(--fourth-color);
 }
 /*product card*/
 .product-filter{
@@ -360,10 +346,11 @@ nav{
 .product-top section:first-child h3,
 .product-top section:last-child button{
     font-weight: 600;
+    color: var(--scond-color);
 }
 .card .card-header,
 .card-body .card-text{
-    color: #311002;
+    color: var(--scond-color);
     font-size: 15px;
     font-weight: 600;
 }
@@ -390,7 +377,7 @@ nav{
     text-decoration: line-through;
 }
 .card .card-body .card-text a{
-    border: 1px #e76f3d solid;
+    border: 1px var(--fifth-color) solid;
     border-radius: 100%;
     width: 40px;
     height: 40px;
@@ -399,7 +386,7 @@ nav{
     align-items: baseline;
 }
 .card .card-body .card-text a:hover{
-    background-color: #e76f3d;
+    background-color: var(--fifth-color);
     color: white;
 }
 .card .card-body .card-text a i{
@@ -410,25 +397,6 @@ nav{
     margin: 30px 50px;
 }
 
-/*
-.favorite-product:hover::after{
-    color: red;
-}
-.favorite-product::after {
-    font-family: 'FontAwesome';
-    content: '\f08a';
-}
-.favorite-product{
-    position: absolute;
-    top: 50px;
-    right: 15px;
-    color: #b9b4c7;
-    width: 30px;
-    height: 30px;
-    visibility: visible;
-    opacity: 0;
-}
-*/
 .product-bubble {
     position: absolute;
     top: 8px;
@@ -474,12 +442,12 @@ nav{
     border-bottom-left-radius: 0; 
 }
 .page-item.active .page-link{
-    color: #311002;
+    color: var(--scond-color);
     background-color: rgba(254, 171, 107, 0.81);
     border-color: rgba(254, 171, 107, 0.81);
 }
 .page-link{
-    color: #311002;
+    color: var(--scond-color);
 }
 /*special product*/
 .special-product{
@@ -504,11 +472,11 @@ nav{
 }
 .special-product .special-title h3{
     font-weight: 800;
-    color: #311002
+    color: var(--scond-color)
 }
 .special-product .special-title a{
     text-decoration: none;
-    color: #311002;
+    color: var(--scond-color);
     font-weight: 600;
     font-size: 15px;
 }
@@ -549,14 +517,11 @@ nav{
 } 
 /*comment*/
 .comments{
-    background-color: rgba(155, 207, 224, 0.16);
+    background-image: linear-gradient(to right,var(--fourth-color),white,var(--fourth-color));
     align-items: center;
     justify-content: center;
     margin-top: 70px;
     height: auto;
-}
-.carousel-comment{
-    position: relative;
 }
 .comments .title{
     display: inline-block;
@@ -571,6 +536,7 @@ nav{
     justify-content: center;
     align-items: center;
     padding: 0px 0px 10px 0px;
+    color: var(--scond-color);
 }
 .comments .title h3::after{
      position: absolute;
@@ -579,7 +545,7 @@ nav{
     height: 3px;
     margin-top: 5px;
     margin-left: 225px;
-    background-color: #feab6b;
+    background-color: var(--fifth-color);
 }
 .comments .title h3::before{
     position: absolute;
@@ -588,23 +554,9 @@ nav{
     height: 3px;
     margin-top: 5px;
     margin-right: 225px;
-    background-color: #feab6b;
+    background-color: var(--fifth-color);
 }
-.carousel-item{
-    justify-content: space-between;
-    float: left;
-    transition: 0.7s ease;
-}
-.carousel-item.active{
-    animation-name: slideOutLeft;
-    animation-duration: 2s;
-
-}
-.carousel-item.active{
-    margin: 0;
-}
-
-.carousel-item .comment-box{
+.comment-box{
     direction: ltr;
     width: 40%;
     background-color: #ffffff;
@@ -619,7 +571,7 @@ nav{
 }
 .comment-box .title-comment{
     margin: 40px 0 0 15px;
-    color: #311002;
+    color: var(--scond-color);
     font-weight: 500;
     font-size: 10px;
 }
@@ -634,18 +586,4 @@ nav{
     margin: 25px 25px 5px 15px;
     font-size: 13px;
     font-weight: 500;
-}
-.carousel-comment .carousel-control-next{
-    background-color: #eff7fa;
-    right: 0;
-    width: 30px;
-    height: 30px;
-    top: 40%;
-}
-.carousel-comment .carousel-control-prev{
-    background-color: #eff7fa;
-    left: 0;
-    width: 30px;
-    height: 30px;
-    top: 40%
 }

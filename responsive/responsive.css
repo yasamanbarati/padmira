@@ -1,13 +1,10 @@
 @media only screen and (max-width:1440px){
     
-    header{
-        width: calc(100% - 140px);
-        
-    }
+
     .information{
-        width: calc(100% - 140px);
+        /* width: calc(100% - 140px); */
         max-width: 100%;
-        margin-right: 100px;
+        /* margin-right: 100px; */
         display: flex;
         justify-content: center;
         align-items: flex-start;
@@ -46,15 +43,15 @@
     color: #480e6b;
 }
 .card{
-    box-shadow: 5px 5px #f3e9e7,
-                2px 10px #f3e9e7,
-                1px 2px #f3e9e7;
+    box-shadow: 5px 5px var(--fourth-color),
+                2px 10px var(--fourth-color),
+                1px 2px var(--fourth-color);
 }
     .pagination{
         padding-left: 380px;
     }
     .main-img img{
-        margin: 0px 150px 20px 0px;
+        /* margin: 0px 150px 20px 0px; */
     }
     .header-menu .menu-item{
         min-width: 25%; 
@@ -146,7 +143,7 @@
     }
     .special .sp-card .sp-body .card-icon{
         border: transparent;
-        color: #e76f3d;
+        color: var(--fifth-color);
     }
     .main-img img{
         margin: 10px 30px 10px 0px;
