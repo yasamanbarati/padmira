@@ -5,7 +5,7 @@ html{
 }
 :root{
     --first-color: #96424c;
-    --scond-color: #462a31;
+    --scond-color: #22181a;
     --third-color: #ca5978;
     --fourth-color: #fff2f2;
     --fifth-color: #fff700;
@@ -15,6 +15,7 @@ header{
     direction: rtl;
     height: 80px;
     width: 100%;
+    border-bottom: 2px var(--fourth-color) solid;
 }
 nav{ 
     width: 1300px;
@@ -30,7 +31,7 @@ nav{
     align-items: center;
 }
 .header-logo h2 span:first-child{
-    color: var(--fifth-color);
+    color: var(--first-color);
 }
 .header-logo h2 span:last-child{
     color: var(--scond-color);
@@ -67,7 +68,7 @@ nav{
 }
 .header-buttons  .login,
 .main-link .login{
-    width: 125px;
+    width: 45%;
     border: 3.5px transparent solid;
     background-image: linear-gradient(white,white), linear-gradient(to right,var(--fifth-color),var(--third-color));
     background-clip:padding-box, border-box;
@@ -78,13 +79,16 @@ nav{
     transition: .7s ease;
     margin-left: 25px;
     color: var(--scond-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.header-buttons  .member,
-.main-link .about{
+.main-link .about,
+.header-buttons .member{
+    width: 45%;
     background-color: var(--fifth-color);
     border: none;
     border-radius: 15px;
-    width: 125px;
     height: 40px;
     color: var(--scond-color);
     font-weight: 700;
@@ -95,15 +99,19 @@ nav{
 }
 .header-buttons  .login:hover,
 .main-link .login:hover{
-   background: linear-gradient(var(--fifth-color),var(--fifth-color));;
+   background: linear-gradient(var(--third-color),var(--third-color));;
     opacity: 7;
     color: white;
+}
+.header-main,
+.header-logo{
+    padding: 0px;
 }
 /*header main*/
 .main{
     width: 100%;
     height: auto;
-    margin-top: 30px;
+    margin-top: 0px;
     direction: rtl;
     
 }
@@ -114,22 +122,22 @@ nav{
     position: absolute;
     z-index: 1;
     top: 100px;
-    right: 67px;
+    right: 55px;
 }
 .main-information section h2{
     margin: 30px 0;
     font-weight: 600;
-    font-size: 35px;
+    font-size: 29px;
     color: var(--scond-color);
 }
 .main-information section h2 span{
     color: var(--fifth-color) ;
 }
 .main-information section p{
-    width: 400px;
+    width: 360px;
     height: 100px;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
     color: var(--scond-color);
 }
 .main-information .main-link{
@@ -138,11 +146,20 @@ nav{
     direction: ltr;
 }
 .main-img{
+    position: absolute;
     width: 100%;
-    height: 600px;
+    height: 100%;
+}
+.main-card-info {
+    width: 400px;
+    height: 280px;
 }
 .main-img img{
     position: relative;
+    width: 100%;
+    height: 100%;
+}
+.main-card-info img{
     width: 100%;
     height: 100%;
 }
@@ -586,4 +603,26 @@ nav{
     margin: 25px 25px 5px 15px;
     font-size: 13px;
     font-weight: 500;
+}
+/* footer */
+footer{
+    border-top: 2px var(--fourth-color) solid;
+}
+.footer-links ul,
+.footer-info-text{
+    padding: 0;
+    list-style-type: none;
+    font-size: 14px;
+    color: var(--scond-color);
+    font-weight: 600;
+}
+.footer-links ul li{
+    margin: 15px 0px;
+}
+.footer-links h4,
+.footer-info-title 
+{
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--scond-color);
 }
